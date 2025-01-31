@@ -1,10 +1,9 @@
-.look{
-    padding: 20px;
-    background-color: var(--pry-btn-color);
-    color: white;
-    font-weight: 500;
-    border: none;
+.banner{
+    background: url("../../../assets/shutter.svg") no-repeat ;
+    background-size: cover;
+    min-height:100vh ;
+}
+.navigation{
+    display: flex;
     
-    border-radius: 1px solid hsla(0, 0%, 0%, 0.763);
-
 }

@@ -1,33 +1,27 @@
-import React from 'react'
-import "./Banner.css"
-import { navigate } from '../../../Data/Navigation'
-import { Link } from 'react-router-dom'
-// import Bitmap from '../../../assets/Bitmap.svg'
-import Button from '../../Reuseable-components/Button/Button'
-import Input from "../../Reuseable-components/Input/Input"
+import React from "react";
+import "./Banner.css";
+import { navigate } from "../../../Data/Navigation";
+import { NavLink } from "react-router-dom";
+import Frame from "../../../assets/Frame.svg";
 const Banner = () => {
   return (
-    <div>
-
-      <nav>
-        {/* <div className="logo">
-    <img src={Bitmap} alt="" />
-        </div> */}
-        {navigate.map((ref, id)=>(
-          <ul key={id}>
-            <li>
-              <Link to={ref.to}>{ref.path}</Link>
-            </li>
-          </ul>
-        ))}
-      </nav>
-
-      <main>
-        <Button className='look'>cool</Button>
-        <Input type='text' />
-      </main>
+    <div className="banner">
+      <div className="container">
+        <nav className="navigation">
+          <div className="logo">
+            <img src={Frame} alt="" />
+          </div>
+          {navigate.map((ref, id) => (
+            <ul key={id}>
+              <li>
+                <NavLink to={ref.to}>{ref.path}</NavLink>
+              </li>
+            </ul>
+          ))}
+        </nav>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;
