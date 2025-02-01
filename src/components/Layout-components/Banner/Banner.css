@@ -2,8 +2,25 @@
     background: url("../../../assets/shutter.svg") no-repeat ;
     background-size: cover;
     min-height:100vh ;
+    /* margin-left: 4rem; */
 }
+
 .navigation{
     display: flex;
+    align-items: center;
+    gap: 4rem;  
+}
+.refs{
+    display: flex;
+    gap: 3rem;
     
+}
+.refs li{
+    list-style: none;
+
+}
+.content{
+    color: var(--text-primary);
+    line-height: 1.8;
+    margin-top: 8rem;
 }

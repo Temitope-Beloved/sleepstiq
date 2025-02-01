@@ -1,0 +1,9 @@
+.btn{
+    background-color: var(--pry-btn-color);
+    color: white;
+    border: none;
+    width: 225px;
+    height: 50px;
+    border-radius: .45rem;    
+    margin-top: 1rem;
+}

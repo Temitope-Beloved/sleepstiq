@@ -3,7 +3,7 @@ import "./Button.css"
 const Button = ({children, className}) => {
   return (
    <>
-   <button className={`${className} `}>{children}</button>
+   <button className={`${className} btn `}>{children}</button>
    </> 
    
   )
